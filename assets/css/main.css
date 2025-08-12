@@ -13,12 +13,10 @@ body {
     color: #333;
     background: #fff;
 }
-/* Container */
-.container {
-    padding: 2rem 1rem;
-}
 /* Header */
 .site-header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
     margin-bottom: 3rem;
 }
 .site-nav {
@@ -27,13 +25,17 @@ body {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+    padding: 1rem;
+}
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
 }
 /* Content Container */
 .content {
-    max-width: 800px;
-    margin: 0 auto 3rem;
+    margin-bottom: 3rem;
 }
 .site-title {
     color: #333;
@@ -216,8 +218,6 @@ body {
 }
 /* Footer */
 .site-footer {
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
     color: #666;
     font-size: 0.85rem;
