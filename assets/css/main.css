@@ -15,8 +15,6 @@ body {
 }
 /* Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 2rem 1rem;
 }
 /* Header */
@@ -27,8 +25,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
     padding-bottom: 1rem;
     border-bottom: 1px solid #eee;
+}
+/* Content Container */
+.content {
+    max-width: 800px;
+    margin: 0 auto 3rem;
 }
 .site-title {
     color: #333;
@@ -211,6 +216,8 @@ body {
 }
 /* Footer */
 .site-footer {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
     color: #666;
     font-size: 0.85rem;
@@ -232,6 +239,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+        padding: 0 1rem 1rem;
     }
     .site-title {
         font-size: 1.3rem;
