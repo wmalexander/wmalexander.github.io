@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The ROI-Driven Approach to Small Business Web Development: Beyond Pretty Designs"
-date: 2025-01-12
+date: 2025-08-12
 excerpt: "After 25 years in web development, I've learned that business results define success. The difference between transformative websites and expensive digital brochures lies in one factor: an unwavering focus on measurable return on investment."
 image: /assets/images/roi-driven-approach-header.png
 ---

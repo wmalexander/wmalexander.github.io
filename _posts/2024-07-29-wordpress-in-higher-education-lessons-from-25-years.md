@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WordPress in Higher Education: Lessons from 25 Years of Campus Web Development"
-date: 2025-01-12
+date: 2024-07-29
 excerpt: "A personal journey through 25 years of campus web development, exploring how universities have evolved from simple brochure sites to complex digital ecosystems, and why WordPress Multisite has become a game-changer for higher education."
 image: /assets/images/wordpress-higher-ed-header.png
 ---
