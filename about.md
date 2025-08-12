@@ -6,31 +6,26 @@ permalink: /about/
 
 # About Me
 
-Hello! I'm William Alexander, a passionate developer and technology enthusiast.
-
-## My Journey
-
-I've always been fascinated by technology and its potential to solve real-world problems. My journey in tech has been driven by curiosity and a desire to build things that matter.
+I'm William Alexander, a Senior Web Developer at Wake Forest University with 25+ years of experience in web development. I specialize in WordPress, higher education solutions, and business web applications.
 
 ## What I Do
 
-- **Software Development**: Building robust and scalable applications
-- **Open Source**: Contributing to projects that make a difference
-- **Continuous Learning**: Always exploring new technologies and methodologies
-- **Knowledge Sharing**: Writing about my experiences and learnings
+I help organizations build robust web solutions with expertise in:
 
-## Skills & Interests
+- **WordPress Development** - Custom themes, plugins, and enterprise solutions
+- **Higher Education** - Academic and administrative web applications  
+- **Cloud Infrastructure** - Scalable hosting and deployment solutions
+- **AI Integration** - Modern tools to enhance productivity and user experience
+- **Business Solutions** - Custom web applications tailored to organizational needs
 
-- Web Development
-- System Architecture
-- Problem Solving
-- Technical Writing
+## Experience
+
+With over two decades in the field, I've worked on projects ranging from small business websites to large-scale university systems. I focus on creating maintainable, performant solutions that serve real business needs.
 
 ## Get in Touch
 
-Feel free to reach out if you'd like to collaborate on a project or just have a chat about technology!
+Feel free to reach out if you'd like to collaborate on a project or discuss web development.
 
 - GitHub: [@wmalexander](https://github.com/wmalexander)
 - Email: william@williamalexander.co
-
-Thanks for visiting my site!
+- Website: [williamalexander.co](https://williamalexander.co)

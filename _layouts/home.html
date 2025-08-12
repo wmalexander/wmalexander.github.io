@@ -1,27 +1,24 @@
 ---
 layout: default
 ---
-<div class="home">
-    <section class="hero">
-        <h1>Welcome to {{ site.title }}'s Website</h1>
-        <p class="lead">{{ site.description }}</p>
-    </section>
-    {{ content }}
-    <section class="recent-posts">
-        <h2>Recent Blog Posts</h2>
-        <ul class="post-list">
-            {% for post in site.posts limit:5 %}
-            <li>
-                <article>
-                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-                </article>
-            </li>
-            {% endfor %}
-        </ul>
-        {% if site.posts.size > 5 %}
-        <a href="{{ '/blog' | relative_url }}" class="view-all">View all posts →</a>
-        {% endif %}
-    </section>
+<div class="articles">
+    {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+        <article class="article-item">
+            <h2 class="article-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+            </time>
+            {% if post.excerpt %}
+            <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+            {% endif %}
+        </article>
+        {% endfor %}
+    {% else %}
+        <div class="no-articles">
+            <p>No articles yet. Check back soon!</p>
+        </div>
+    {% endif %}
 </div>

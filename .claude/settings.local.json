@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ashtom.github.io)",
+      "WebFetch(domain:williamalexander.co)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
