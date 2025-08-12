@@ -1,33 +1,36 @@
 ---
 layout: default
 ---
-<div class="articles-grid">
-    {% if site.posts.size > 0 %}
-        {% for post in site.posts %}
-        <article class="article-card">
-            {% if post.image %}
-            <div class="article-image">
-                <a href="{{ post.url | relative_url }}">
-                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
-                </a>
-            </div>
-            {% endif %}
-            <div class="article-content">
-                <h2 class="article-title">
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                </h2>
-                <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date: "%B %d, %Y" }}
-                </time>
-                {% if post.excerpt %}
-                <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+<div class="articles-section">
+    <h2 class="articles-headline">Recent Articles</h2>
+    <div class="articles-grid">
+        {% if site.posts.size > 0 %}
+            {% for post in site.posts %}
+            <article class="article-card">
+                {% if post.image %}
+                <div class="article-image">
+                    <a href="{{ post.url | relative_url }}">
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+                    </a>
+                </div>
                 {% endif %}
+                <div class="article-content">
+                    <h3 class="article-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %d, %Y" }}
+                    </time>
+                    {% if post.excerpt %}
+                    <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        {% else %}
+            <div class="no-articles">
+                <p>No articles yet. Check back soon!</p>
             </div>
-        </article>
-        {% endfor %}
-    {% else %}
-        <div class="no-articles">
-            <p>No articles yet. Check back soon!</p>
-        </div>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>
